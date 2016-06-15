@@ -1,0 +1,337 @@
+@charset 'UTF-8';
+@import 'mixins';
+
+$c-main: #fff;
+$c-ln: #40a4db;
+
+@font-face {
+	font-family: 'icomoon';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/icomoon.woff?ec19j8') format('woff');
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	font-size: 100%;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+// @group General
+// -----------------------------------------------------------------------------
+
+body {
+	font: normal normal 87.7%/1.3em 'Roboto', Arial, FreeSans, sans-serif;
+	overflow-y: hidden;
+	min-width: 320px;
+	color: $c-main;
+	background-color: #ccc;
+	background-image: url(../images/bg-2.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+a img,
+a:link img,
+a:visited img {
+	text-decoration: none;
+	border: none;
+}
+
+a,
+a:visited {
+	color: $c-main;
+}
+
+// @end
+
+// @group Card
+// -----------------------------------------------------------------------------
+
+.card {
+	position: relative;
+	width: 260px;
+	min-height: 300px;
+	margin: 10% auto;
+	padding: 2.4em 1.4em 1.4em;
+	text-align: center;
+	border: 1px solid;
+	border-color: $c-main transparent transparent $c-main;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, .6);
+	box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+	will-change: transform;
+
+	&__bg {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: $c-main;
+		background-image: url(../images/bg-2.jpg);
+		background-repeat: no-repeat;
+		background-position: center center;
+		-webkit-filter: blur(20px);
+		-moz-filter: blur(20px);
+		filter: blur(20px);
+	}
+
+	&__overlay {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		content: "";
+		//background: radial-gradient(ellipse at center, rgba(255,255,255,.8) 0%,rgba(0,0,0,.6) 100%);
+		background: radial-gradient(ellipse at center, rgba(255,255,255,.9) 0%,rgba(0,0,0,.2) 100%);
+		background-position: 0 50%;
+		background-size: 400% 400%;
+		will-change: background-position;
+		z-index: 0;
+	}
+
+	&__inner {
+		position: relative;
+		z-index: 2;
+	}
+
+	// Photo
+
+	&__photo {
+		position: relative;
+		width: 128px;
+		height: 128px;
+		margin: 0 auto 2em;
+		padding: 3px;
+		
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			border: 4px solid $c-main;
+			border-radius: 128px;
+			z-index: 1;
+		}
+
+		img {
+			display: block;
+			overflow: hidden;
+			border-radius: 128px;
+			will-change: transform;
+			@include transition(transform linear .1s);
+			
+			@media (max-width: 1024px) {
+				@include transition(none); // optimize performace issues on mobile
+			}
+		}
+
+		&__inner {
+			display: block;
+			overflow: hidden;
+			width: 128px;
+			height: 128px;
+		}
+
+		&__country {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			display: block;
+			width: 30px;
+			height: 20px;
+			border: 2px solid $c-main;
+			background: url(../images/ukraine.gif) 0 0 no-repeat;
+			text-indent: -999px;
+			overflow: hidden;
+			z-index: 2;
+		}
+	}
+
+	// Name
+
+	&__name {
+		margin-bottom: 2em;
+
+		&__title {
+			font-size: 2.4em;
+			line-height: 1.2;
+			margin: 0 0 .1em;
+			font-weight: 300;
+		}
+
+		&__sub-title {
+			font-size: 1em;
+			//font-style: italic;
+		}
+
+		&:after {
+			display: block;
+			width: 70px;
+			height: 1px;
+			margin: 2em auto 0;
+			content: '';
+			background-color: $c-main;
+		}
+	}
+
+	// Bio
+
+	&__descr {
+		margin-bottom: 2em;
+
+		p {
+			margin-bottom: .5em;
+		}
+	}
+
+	// Links
+
+	&__soc {
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		li {
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		&__btn {
+			font-size: 2em;
+			line-height: 2em;
+			display: inline-block;
+			width: 2em;
+			height: 2em;
+			text-align: center;
+			text-decoration: none;
+			@include transition(all linear .1s);
+
+			&:hover,
+			&:focus {
+				color: $c-ln;
+			}
+		}
+	}
+}
+
+// @end
+
+// @group Icons
+// -----------------------------------------------------------------------------
+
+.ico {
+	font-family: 'icomoon' !important;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	line-height: 1;
+	text-transform: none;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	&_tw:before {
+		content: '\ea91';
+	}
+
+	&_gh:before {
+		content: '\eab1';
+	}
+
+	&_sk:before {
+		content: '\eac6';
+	}
+}
+
+// @end
+
+//@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
