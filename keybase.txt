@@ -1,0 +1,76 @@
+==================================================================
+https://keybase.io/mr_gambal
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://mrhambal.com
+  * I am mr_gambal (https://keybase.io/mr_gambal) on keybase.
+  * I have a public key with fingerprint 8D8F FA0B 6F27 3550 629D  ED46 4AED AD5D C57F 84B2
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.8.25"
+        },
+        "key": {
+            "eldest_kid": "01018da2e7ea570937836107cce5aa8bce22ac5d03d02ce98145710d57e8f5ef992e0a",
+            "fingerprint": "8d8ffa0b6f273550629ded464aedad5dc57f84b2",
+            "host": "keybase.io",
+            "key_id": "4aedad5dc57f84b2",
+            "kid": "01018da2e7ea570937836107cce5aa8bce22ac5d03d02ce98145710d57e8f5ef992e0a",
+            "uid": "2effcb6946c5648fed5453db565fed19",
+            "username": "mr_gambal"
+        },
+        "service": {
+            "hostname": "mrhambal.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1466667110,
+    "expire_in": 157680000,
+    "prev": "ada859ecf3a2d51e220443748dddea0e423000f49f7752b5bc0001ac81f3e742",
+    "seqno": 8,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtkn1MG2Ucx1vYzCwRcXOM1YXBKTCk1LvrPb0rCQ4Sxa0SZkLEzm00d/c8B0dL
+W65XEBkY6ksk4MKmFQ0SNDLZ/hgiEHRjiOKQ4Ix1WxFZZxg6JgxJNpc5Xp13DE1M
+/NPnr+fl8/v+vs/3eRrvi9Rs0FrnThwYeumVLu3ZGU7znKNRqMI4N6zEMqow3iki
+l6zOXGwpwjIwB6rkWC8yiu4ElxsiY4k3YY0xYOVI8opul0LhRsZIAqzaoPJqNXJC
+5JXtDhGqpwROMJAlEY1YQOMWE82YzARO8zwCLMtwPCJJlgcQN0Gc5JGFIShAEzgE
+NGIEgASLhUQ4qzQURFcRkjySqFrEGMgIAotzZoGkTQDgZtICEaTMFIsgCwHkAS0w
+FEcqhcVur/yvy2CrTu2r9v6D/599+1blSCQIPGe2UGYemClGQBBQwAQ5YAbKnLCo
+oBdJa8GXSvYitpRjnWqqyna5yCM1WfUq/yDFq4SRd5cqxR7JLbt5t1M5KZZlT4Za
+KFd6VLICcfY1DTsnuqCS4933e+fuAxIKysuiqkpQZmXQBIEbMPSCR5SQXVQJQJsZ
+XBlqH1SuaLKQZYAF8YKJJSEglCxwijLRFAMhRCyOKNKk4AJlEWgakBzgeGVJsDxD
+CCZEU2rMXlTmcmMZjOKTLVIkvWKRi5V9EsKq6yK2rdNoN2juWR+h/lCN7t6Yv7/t
+29r7FyO/+XqJdmxvaIWfB/37htPjnSm/pHOPtw2sj43uq6k4CntrU+Mzq9JibuSP
+766tqX4qrP3gHNWbEqkZZap+t3bcKml8FFynDvWOHgzvKGi5lRs1rEu+nT/zRPJk
+2uWRqWdmb478Wi/H4Ie/PaKvOHlKyErNHK/wffrJRwnf6XqeTCYS3zizrW/3dE2e
+rul2w5/W4/0PxZds7uJmhrXLeFLDnr4kx0/6QUvYcEP7Yqru+dCW8IWy7fELWNvG
+uIJHDOHFvJEHphJnSaP+x7nxTVTbVrufjai+KkWugPdao34+z/haT55/dky/N+Q8
+s+dlf9aWJn3nvC97Z6NcP/dDw972V60Xbk5PPBb3VZD/o3voLd9EyBZOK+TH/LVa
+v+2LuMHB+E2nWvNtbc3Znrq+nM3BO6l1ZV+mwNzJjonfRkvc3MEEwt592tZTjqcV
+LV/tkNmoa/sWolFf8kpwf6BJP75xdHF/u//1wV0xdTZODMQ2e7h5w4NNxy/FTnbo
+8FHbsgnTFAi9mWOhS4Z3L7vHPVnHKjX1s4HAQKhkcS6x7vuVh6e6Iq4HX6vYKd05
+nXtxYVdUYaizuMfanCf15OXMX8vub5k621h9oqXmWMvyUvRRNLSUFHj6cGHnoa0X
+u3N6gu/vyE3/cPqA5bN1V/iAPwbrjxsA566E37RGOOY/bm2Plf4C
+=S2iE
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mr_gambal
+
+==================================================================
